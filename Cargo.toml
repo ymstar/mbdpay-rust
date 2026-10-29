@@ -1,0 +1,21 @@
+[package]
+name = "mbdpay"
+version = "0.1.0"
+edition = "2021"
+authors = ["yangming"]
+description = "面包多Pay (MianBaoDuo Pay) Rust SDK"
+license = "MIT"
+homepage = "https://doc.mbd.pub"
+repository = "https://github.com/yangming/mbdpay-rust"
+keywords = ["payment", "mbdpay", "mianbaoduo", "wechat", "alipay"]
+categories = ["api-bindings", "finance"]
+
+[dependencies]
+md-5 = "0.10"
+reqwest = { version = "0.12", features = ["json", "blocking"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
